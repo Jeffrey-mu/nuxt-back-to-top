@@ -1,7 +1,7 @@
 {
   "name": "nuxt-back-to-top",
   "version": "0.0.2",
-  "description": "My new Nuxt module",
+  "description": "nuxt-back-to-top",
   "license": "MIT",
   "type": "module",
   "exports": {
