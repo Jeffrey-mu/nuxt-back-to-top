@@ -52,6 +52,13 @@ export default defineNuxtConfig({
 
 That's it! You can now use My Module in your Nuxt app ✨
 
+## setting style
+```css
+//icon color
+#nuxt-back-to-top-svg-path {
+  fill: #f5c85c;
+}
+```
 ## Development
 
 ```bash
