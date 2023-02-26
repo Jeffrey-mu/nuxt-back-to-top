@@ -1,4 +1,6 @@
 export default defineNuxtConfig({
   modules: ['../src/module'],
-  myModule: {}
+  backToTop: {
+    width: 2
+  }
 })

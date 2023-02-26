@@ -46,19 +46,58 @@ npm install --save-dev nuxt-back-to-top
 export default defineNuxtConfig({
   modules: [
     'nuxt-back-to-top'
-  ]
+  ],
+  backToTop: {
+    prefix: 'Nuxt',
+    autoInsert: true, // If the autoInsert value is false, the component will be imported
+  },
 })
 ```
-
-That's it! You can now use My Module in your Nuxt app ✨
-
-## setting style
-```css
-//icon color
-#nuxt-back-to-top-svg-path {
-  fill: #f5c85c;
-}
+- If you do not need to insert automatically, you can use components
+- Layout or app page use
+```html
+<template>
+<NuxtBackToTop />
+</template>
 ```
+## props
+```ts
+props = {
+    visibleoffset: {
+      type: [String, Number],
+      default: 600,
+    },
+    visibleoffsetbottom: {
+      type: [String, Number],
+      default: 0,
+    },
+    right: {
+      type: String,
+      default: '30px',
+    },
+    bottom: {
+      type: String,
+      default: '40px',
+    },
+    scrollFn: {
+      type: Function,
+      default: function (eventObject) { },
+    },
+    width: {
+      type: String,
+      default: '30px',
+    },
+    height: {
+      type: String,
+      default: '30px',
+    },
+    color: {
+      type: String,
+      default: '#257EDF',
+    },
+  },
+```
+That's it! You can now use My Module in your Nuxt app ✨
 ## Development
 
 ```bash
